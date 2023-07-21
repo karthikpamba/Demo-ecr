@@ -22,7 +22,7 @@ pipeline{
     stage("Docker Build image and Tag"){
             steps{
                   sh 'docker image build -t $JOB_NAME:v1.$BUILD_ID .'
-                  sh 'docker image tag $JOB_NAME:v1.$BUILD_ID dockersandheep/$JOB_NAME:v1.$BUILD_ID'
+                  sh 'docker image tag $JOB_NAME:v1.$BUILD_ID karthikpamba/$JOB_NAME:v1.$BUILD_ID'
             }
             }
             
